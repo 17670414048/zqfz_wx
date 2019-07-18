@@ -1,0 +1,256 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ul, li, ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+button, input {
+    outline: none;
+    border: none
+}
+
+html, body {
+    /* min-width: 1200px; */
+    height: 100%;
+    font-size: 50px;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", "Adobe 黑体 Std R", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    scrollbar-face-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FCFCFC;
+    font: 12px/100% Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, sans-serif;
+    /* padding-top: 80px; */
+
+}
+
+ul, li, ol {
+    list-style: none
+}
+
+em, i {
+    font-style: normal
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+button {
+    cursor: pointer
+}
+
+button, input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, sans-serif
+}
+
+.clearfix::after, .clearfix::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
+
+.v-left {
+    text-align: left;
+}
+
+.v-center {
+    text-align: center;
+}
+
+.v-right {
+    text-align: right;
+}
+
+/* .w {
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+a:link {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+
+a:visited {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+
+a:hover {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+
+label:active, a:active {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+
+label::selection {
+    background: #FFF;
+    color: #333;
+}
+
+label::-moz-selection {
+    background: #FFF;
+    color: #333;
+}
+
+label::-webkit-selection {
+    background: #FFF;
+    color: #333;
+}
+/* 兼容input的边框 */
+input{outline: none;user-select:text;-webkit-user-select:text;-webkit-appearance:none;}
+/* 
+input{  
+	background:none;  
+	outline:none;  
+	border:0px;
+} */
+/* 聚焦时不出现蓝色边框 */
+/* input:focus{outline:none} */
+
+.input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #FD908B;
+}
+
+.input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #FD908B;
+}
+
+.input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #FD908B;
+}
+
+.input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #FD908B;
+}
+
+/* 实现界面布局 */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page-header {
+    flex: 0 0 1rem;
+}
+
+.slider {
+    flex: 0 0 2rem;
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.footer {
+    flex: 0 0 1rem;
+}
+
+.foot-back {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    background: linear-gradient( 270deg, rgba(254, 154, 139, 1) 0%, rgba(253, 134, 140, 1) 72%, rgba(247, 140, 160, 1) 100%);
+    font-size: 0.36rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    position: relative;
+}
+
+.back-blue {
+    background: linear-gradient(135deg, rgba(152, 179, 246, 1) 0%, rgba(95, 103, 239, 1) 100%);
+    border-radius: 0.08rem;
+}
+
+.back-red {
+    background: linear-gradient(133deg, rgba(238, 128, 146, 1) 0%, rgba(209, 112, 151, 1) 100%);
+    border-radius: 0.08rem;
+}
+
+.back-green {
+    background: linear-gradient(135deg, rgba(12, 186, 214, 1) 0%, rgba(39, 170, 170, 1) 100%);
+    border-radius: 0.08rem;
+}
+
+.back-purple {
+    background: linear-gradient(225deg, rgba(226, 152, 218, 1) 0%, rgba(208, 120, 175, 1) 100%);
+    border-radius: 0.08rem;
+}
+
+.no-info{
+    height: 0.4rem;
+    font-size: 0.28rem;
+    color: rgba(204, 204, 204, 1);
+    line-height: 0.4rem;
+    text-align: center;
+}

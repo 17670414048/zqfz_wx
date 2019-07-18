@@ -1,0 +1,33 @@
+.page-header {
+  padding-top: 0.6rem;
+}
+
+.page-top {
+  text-align: center;
+  position: relative;
+  margin: 0 0.48rem;
+}
+
+.page-top h4 {
+  height: 0.56rem;
+  font-size: 0.36rem;
+  color: rgba(74, 74, 74, 1);
+  line-height: 0.56rem;
+  margin-bottom: 0.08rem;
+  position: relative;
+}
+
+.page-top p {
+  height: 0.4rem;
+  font-size: 0.28rem;
+  color: rgba(204, 204, 204, 1);
+  line-height: 0.4rem;
+}
+
+.back-img {
+  position: absolute;
+  top: 0.16rem;
+  left: 0;
+  width: 0.28rem;
+  height: 0.22rem;
+}
